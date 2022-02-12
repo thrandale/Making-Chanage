@@ -16,12 +16,15 @@ def validateInput(input, max):
     '''
     Validates the user's input.
     '''
+
+    # Checks if the input is a number
     try:
         input = float(input)
     except ValueError:
         print("Input must be a number")
         exit()
 
+    # Checks if the input is a positive number and less than the max
     if input <= 0:
         print("Input must be greater than 0")
         exit()
